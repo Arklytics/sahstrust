@@ -29,3 +29,49 @@ a{color:inherit}
 
 .learn-section{background:var(--paper)}.key-card{height:100%;min-height:245px;padding:22px 19px;background:#eef1e9;border:1px solid #e2e6de;border-radius:8px}.key-number{display:grid;place-items:center;width:34px;height:34px;margin-bottom:27px;border-radius:50%;background:var(--forest);color:white;font-size:10px;font-weight:700;letter-spacing:.04em}.key-card h3{font-size:19px;line-height:1.2;color:var(--forest);font-weight:700;margin-bottom:10px}.key-card p{font-size:12px;line-height:1.65;color:#68756c;margin:0}.learn-footer{border-top:1px solid var(--line);padding-top:20px;color:#66736b;font-size:13px}.learn-links{display:flex;justify-content:flex-end;gap:20px;flex-wrap:wrap}.learn-links a{font-size:12px;font-weight:700;color:var(--forest);text-decoration:none}.learn-links a:hover{text-decoration:underline}.learn-links span{margin-left:4px;color:#c47b25}
 @media(max-width:575.98px){.key-card{min-height:0}.key-number{margin-bottom:18px}.learn-links{justify-content:flex-start;gap:12px 18px}}
+
+/* Campaign posters retain their full composition at every screen width. */
+.campaign-slider{background:#fff}
+.campaign-slides{max-width:1672px;margin:0 auto;touch-action:pan-y}
+.campaign-slide[hidden],.slider-controls[hidden]{display:none}
+.campaign-slide a{display:block}
+.campaign-slide img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
+.slider-controls{display:flex;align-items:center;justify-content:center;gap:20px;padding:10px 16px;background:var(--paper)}
+.slider-controls button{border:1px solid #b9c9bd;background:#fff;color:var(--forest);width:44px;height:44px;border-radius:50%;display:grid;place-items:center}
+.slider-dots{display:flex;gap:4px}
+.slider-dots button{border:0;background:transparent}
+.slider-dots button:before{content:'';width:10px;height:10px;border-radius:50%;background:#b9c9bd}
+.slider-dots button[aria-current="true"]:before{background:var(--forest);width:24px;border-radius:8px}
+.slider-controls button:hover{background:#e4ece5}
+.slider-controls button:focus-visible,.campaign-slide a:focus-visible{outline:3px solid #bd7020;outline-offset:-3px}
+
+/* Shared food and climate mission, with readable live text on every device. */
+
+
+
+
+
+
+
+
+
+.climate-section{background:#edf3ed}
+.climate-feature{width:100%;height:auto;border-radius:18px}
+.climate-plan{padding-top:64px;scroll-margin-top:110px}
+.climate-action-card{background:#fff;border:1px solid #d5e1d5;border-radius:14px;padding:30px;height:100%}
+.climate-action-card h3{font-size:23px;color:var(--forest);margin-bottom:14px}
+.climate-action-card p{margin:0;line-height:1.75;color:#53635a}
+.climate-source{margin:24px 0 0;font-size:14px}.climate-source a{color:var(--forest)}
+.climate-invitation{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:56px;background:#fff;border-radius:18px;overflow:hidden}
+.climate-invitation>img{width:100%;height:auto}.climate-invitation>div{padding:30px 35px 30px 0}
+.climate-invitation h3{font-size:clamp(1.8rem,3vw,2.7rem);color:var(--forest);line-height:1.15;margin-bottom:20px}
+@media(max-width:991.98px){.climate-invitation{gap:24px}.climate-invitation>div{padding:24px 24px 24px 0}}
+@media(max-width:575.98px){.climate-invitation{grid-template-columns:1fr;gap:0}.climate-invitation>div{padding:28px}.climate-action-card{padding:24px}}
+
+/* Supporting campaign imagery sits alongside content, outside the carousel. */
+.mission-feature{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:48px;background:#fff;border:1px solid #d5e1d5;border-radius:18px;overflow:hidden}
+.mission-feature>img{display:block;width:100%;height:auto}
+.mission-feature>div{padding:32px 36px 32px 0}
+.mission-feature h3{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.15;color:var(--forest);margin-bottom:18px}
+.mission-feature p:not(.eyebrow){color:#53635a;line-height:1.75}
+@media(max-width:767.98px){.mission-feature{grid-template-columns:1fr;gap:0}.mission-feature>div{padding:28px}}
